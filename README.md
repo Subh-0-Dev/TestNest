@@ -1,5 +1,3 @@
-Here’s a professional README template for your repository [Subh-0-Dev/TestNest]. You can copy, edit, and expand it as needed.
-
 ---
 
 # TestNest
