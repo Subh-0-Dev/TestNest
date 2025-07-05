@@ -13,12 +13,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
 import java.util.List;
 
-@RestController
+@Controller
 @RequestMapping("/student")
 public class StudentController {
 
@@ -33,6 +35,8 @@ public class StudentController {
 
     @Autowired
     private StudentExamService studentExamService;
+
+
 
     @GetMapping("/hey")
     public ResponseEntity<?> getTest(){
